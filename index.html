@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Contact Form</title>
+    <style>
+      body{
+          background-color:#014759;
+          font-family: Georgia, serif;
+      }
+      .main{
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          height: 900px;
+          flex-direction: column;
+          margin: 20px;
+      }
+ h1 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 900;
+    }
+      .container{
+          padding:20px;
+          background-color:white;
+          border:1px solid white;
+          width:60%;
+      }
+      label{
+          color:red;
+          font-weight:900;
+          font-size:20px;
+      }
+      input,select,textarea{
+          display:block;
+          margin:10px 0px 20px 0px;
+          width:100%;
+      }
+button {
+    background-color: #1abc9c;
+    color: #ffffff;
+    padding: 10px;
+    width:100%;
+    border-radius: 20px;
+    font-size: 16px;
+    border:none;
+}
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 800;
+    color: #ffffff;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+    <h1>SIMPLE CONTACT FORM</h1>
+    <div class="container">
+        <form method="get">
+            <label>First Name</label>
+            <input type="text" id="fn" value="ASD">
+
+            <label>Last Name</label>
+            <input type="text" id="ln" value="XYZ">
+
+            <label>Email</label>
+            <input type="email" id="email" value="asd@gmail.com">
+
+            <label>Number</label>
+            <input type="text" id="number" value="454">
+
+            <label>City</label>
+            <select>
+                <option value="Goa">Goa</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Pune">Pune</option>
+            </select>
+
+            <label>Message</label>
+            <textarea id="message" rows="4">Hello World</textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+        <p class="footer">&copy;2025 Simple Contact Form. All Rights Reserved | Design by ASD</p>
+    </div>
+</body>
+</html>
